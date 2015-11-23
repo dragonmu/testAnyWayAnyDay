@@ -1,0 +1,25 @@
+<?php
+
+/**
+* класс дома
+* функции и тд соответствуют исключительно дому
+*/
+class house extends objectClass {
+  
+  
+  public function __get($name) {
+    switch($name) {
+      case 'area':
+        return $this->area();
+      break;
+      ...тут далее цена и тд
+    }
+    return parent::get($name);
+  }
+  
+  private function area() {
+    .....тут обрабатываем данные свойства из базы
+  }
+  
+  ...остальные характерные функции
+}
