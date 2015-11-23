@@ -15,5 +15,6 @@ objects_highway
 `select * from metro left join objects_metro on id=id_metro where id_object = номер объекта and active = 1`
 и тд
 
-# index.php это некий контролле
-# классы уже подключены авто лоадом любым
+# index.php это некий контроллер
+# template.php это некий шаблон
+# классы уже подключены автолоадом
