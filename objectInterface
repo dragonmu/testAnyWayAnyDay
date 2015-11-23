@@ -1,0 +1,12 @@
+<?php
+
+/**
+* тут функции которые используются во всех шаблонах
+* чтобы выводить данные из любого обьекта
+*/
+interface objectInterface {
+    public function getPrice();
+    public function getArea();
+    public function getPlace();
+
+}
