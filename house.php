@@ -4,7 +4,7 @@
 * класс дома
 * функции и тд соответствуют исключительно дому
 */
-class house extends objectClass {
+class house extends objectClass implements objectInterface {
   
   
   public function __get($name) {
