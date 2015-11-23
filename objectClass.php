@@ -32,4 +32,14 @@ class objectClass {
   public function isExists() {
     return $this->_id > 0;
   }
+  
+  public function save() {
+    if($this->isExists()) {
+      ...тут сохраняем обьект
+      ...поля обратно сжимаем в запрос
+      return sql::o()->query('update objects set (?s) values (?s) where ?s',$params);
+    } else {
+      return sql::o()->query('insert into objects (?s) values (?s)',$params);
+    }
+  }
 }
