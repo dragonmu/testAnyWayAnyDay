@@ -5,7 +5,7 @@
 * в него заполнены соответствующие поля
 * и функции общие для всех классов
 */
-class objectClass {
+class objectClass  implements objectInterface {
 
   private $_id;
   private $_name;
@@ -41,5 +41,10 @@ class objectClass {
     } else {
       return sql::o()->query('insert into objects (?s) values (?s)',$params);
     }
+  }
+  
+  ...далее функции интерфейса общие для всех, те которые разные мы переопределим в каждом конкретном классе
+  public function getArea() {
+    
   }
 }
