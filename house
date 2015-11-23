@@ -23,8 +23,8 @@ class house extends objectClass {
   
   public function save() {
     if($this->isExists()) {
-      ...тут сохраним несколько метро
-      ...Вероятно у метро есть свой класс и тд
+      ...тут сохраним несколько шоссе
+      ...Вероятно у шоссе есть свой класс и тд
       return parent::save();
     }
     return false;
