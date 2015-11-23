@@ -20,5 +20,14 @@ class apartament extends objectClass {
     .....тут обрабатываем данные свойства из базы
   }
   
+  public function save() {
+    if($this->isExists()) {
+      ...тут сохраним несколько метро
+      ...Вероятно у метро есть свой класс и тд
+      return parent::save();
+    }
+    return false;
+  }
+  
   ...остальные характерные функции
 }
